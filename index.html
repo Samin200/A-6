@@ -72,75 +72,44 @@
         </div>
       </div>
     </section>
-    <section class="py-[100px] flex flex-col justify-start items-center gap-y-[40px]">
+    <section
+      class="py-[100px] flex flex-col justify-center items-center gap-y-[40px]"
+    >
       <div class="text-[32px] text-center font-semibold">Choose Your Trees</div>
-      <div class="flex gap-x-[30px] px-[135px] ">
-        <div class="min-w-[250px] ">
+      <div class="flex gap-x-[30px] px-[135px]">
+        <div class="min-w-[250px]">
           <div class="font-medium text-[22.4px] mb-[16px]">Categories</div>
-          <div  class="">
-            <div class="text-[19.2px] hover:bg-[#15803D] hover:text-white w-full pl-[10px] rounded-[5px] mb-[8px]">All Tree</div>
-            <div id="categories-container" class="">
-              
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-3 gap-x-[30px]
-        gap-y-[12px]">
-          <div class="flex flex-col bg-white p-[16px] gap-y-[12px] w-85 rounded-2xl">
-            <img src="assets/hero-leaf1.png" alt="" />
-            <div class="flex flex-col gap-[8px]">
-            <div class="text-[14px] font-semibold ">Mango Tree</div>
-            <div class="text-[12px]">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</div>
-            <div class="flex justify-between items-center">
-              <div class="text-[#15803D] bg-[#DCFCE7] px-[12px] py-[4px] rounded-3xl w-fit">Fruit Tree</div>
-              <div>৳500</div>
-            </div>
-            </div>
-            <div>
-                <button class="w-full py-[12px] bg-[#15803D] rounded-3xl text-[15.2px] text-white hover:bg-[#1db154]">Add to Cart</button>
-            </div>
-          </div>
-          <div class="flex flex-col bg-white p-[16px] gap-y-[12px] w-85 rounded-2xl">
-            <img src="assets/hero-leaf1.png" alt="" />
-            <div class="flex flex-col gap-[8px]">
-            <div class="text-[14px] font-semibold ">Mango Tree</div>
-            <div class="text-[12px]">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</div>
-            <div class="flex justify-between items-center">
-              <div class="text-[#15803D] bg-[#DCFCE7] px-[12px] py-[4px] rounded-3xl w-fit">Fruit Tree</div>
-              <div>৳500</div>
-            </div>
-            </div>
-            <div>
-                <button class="w-full py-[12px] bg-[#15803D] rounded-3xl text-[15.2px] text-white hover:bg-[#1db154]">Add to Cart</button>
-            </div>
-          </div>
-          <div class="flex flex-col bg-white p-[16px] gap-y-[12px] w-85 rounded-2xl">
-            <img src="assets/hero-leaf1.png" alt="" />
-            <div class="flex flex-col gap-[8px]">
-            <div class="text-[14px] font-semibold ">Mango Tree</div>
-            <div class="text-[12px]">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</div>
-            <div class="flex justify-between items-center">
-              <div class="text-[#15803D] bg-[#DCFCE7] px-[12px] py-[4px] rounded-3xl w-fit">Fruit Tree</div>
-              <div>৳500</div>
-            </div>
-            </div>
-            <div>
-                <button class="w-full py-[12px] bg-[#15803D] rounded-3xl text-[15.2px] text-white hover:bg-[#1db154]">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        <div class=" flex flex-col gap-y-[8px] p-[16px] bg-white rounded-2xl">
-          <div class="text-[22.4px] font-medium" >Your Cart</div>
           <div class="">
-            <div  class="flex justify-between items-center w-[218px] bg-[#F0FDF4] px-[12px] py-[8px] rounded-2xl">
-            <div >
-              <div class="font-bold text-[14px]">Mango Tree</div>
-              <div class="text-[#1F293750]">500 <i class="fa-solid fa-xmark"></i> 1</div>
+            <div
+              class="text-[19.2px] hover:bg-[#15803D] hover:text-white w-full pl-[10px] rounded-[5px] mb-[8px]"
+              onclick="allTree()"
+            >
+              All Tree
             </div>
-            <div><i class="fa-solid fa-xmark text-[#1F293750]"></i></div>
+            <div id="categories-container" class=""></div>
           </div>
+        </div>
+        <div
+          id="card-container"
+          class="grid grid-cols-3 gap-x-[30px] gap-y-[20px]"
+        >
+        </div>
+        <div class="flex flex-col gap-y-[8px] p-[16px] bg-white rounded-2xl">
+          <div class="text-[22.4px] font-medium">Your Cart</div>
+          <div class="">
+            <div
+              class="flex justify-between items-center w-[218px] bg-[#F0FDF4] px-[12px] py-[8px] rounded-2xl"
+            >
+              <div>
+                <div class="font-bold text-[14px]">Mango Tree</div>
+                <div class="text-[#1F293750]">
+                  500 <i class="fa-solid fa-xmark"></i> 1
+                </div>
+              </div>
+              <div><i class="fa-solid fa-xmark text-[#1F293750]"></i></div>
+            </div>
           </div>
-          <hr class="border-[#1F293750]"/>
+          <hr class="border-[#1F293750]" />
           <div class="text-[17.2px] flex justify-between">
             <div><span class="text-[#15803D]">Total</span>:</div>
             <div class="font-medium">৳1000</div>
