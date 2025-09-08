@@ -18,7 +18,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="bg-[#F0FDF4] text-[#1F2937]">
     <section>
       <div
         class="flex justify-between items-center px-[16px] lg:px-[135px] py-3 lg:py-[26px] bg-[#15803D] text-white h-fit w-full"
@@ -33,7 +33,7 @@
         </div>
         <div>
           <button
-            class="text-[#15803D] bg-[#FACC15] hover:bg-[#cea607] lg:text-[18px] py-[6px] px-[10px] lg:py-[12px] lg:px-[20px] rounded-4xl text-[10px]" 
+            class="text-[#15803D] bg-[#FACC15] hover:bg-[#cea607] lg:text-[18px] py-[6px] px-[10px] lg:py-[12px] lg:px-[20px] rounded-4xl text-[10px]"
           >
             Plant a Tree
           </button>
@@ -41,26 +41,129 @@
       </div>
     </section>
     <section class="">
-      <div class=" flex justify-between w-full bg-[#CFF0DC] text-[#1F2937] text-center">
-        <div><img src="assets/hero-leaf1.png" alt="" /></div>
-        <div class=" flex flex-col gap-[24px] justify-center">
+      <div
+        class="flex justify-between w-full bg-[#CFF0DC] text-[#1F2937] lg:text-center"
+      >
+        <div class="max-sm:hidden">
+          <img class="" src="assets/hero-leaf1.png" alt="" />
+        </div>
+        <div
+          class="max-sm:py-5 flex flex-col gap-[8px] lg:gap-[24px] lg:justify-center max-sm:items-start pl-5"
+        >
           <div class="flex flex-col gap-[8px]">
-            <div class="lg:text-[48px] text-2xl font-bold ">Plant a Tree, Grow a Future</div>
-          <div class="lg:text-[20px] text-[10px] ">
-            Join our mission to plant 1 million trees and make the Earth greener
-            for future <br>generations.
-          </div>
+            <div class="lg:text-[48px] text-2xl font-bold">
+              Plant a Tree, Grow a Future
+            </div>
+            <div class="lg:text-[20px] text-[10px]">
+              Join our mission to plant 1 million trees and make the Earth
+              greener for future <br class="max-sm:hidden" />generations.
+            </div>
           </div>
           <div>
             <button
-              class="text-[#15803D] bg-[#FACC15] hover:bg-[#cea607] lg:text-[18px] py-[6px] px-[10px] lg:py-[12px] lg:px-[20px] rounded-4xl"
+              class="text-[#15803D] bg-[#FACC15] hover:bg-[#cea607] lg:text-[18px] py-[6px] px-[10px] lg:py-[12px] lg:px-[20px] rounded-4xl text-[10px]"
             >
               Get Involved
             </button>
           </div>
         </div>
-        <div><img src="assets/hero-leaf2.png" alt="" /></div>
+        <div class="flex items-end">
+          <img class="" src="assets/hero-leaf2.png" alt="" />
+        </div>
       </div>
     </section>
+    <section class="py-[100px] flex flex-col justify-start gap-y-[40px]">
+      <div class="text-[32px] text-center font-semibold">Choose Your Trees</div>
+      <div class="flex gap-x-[30px] px-[135px] ">
+        <div class="min-w-[250px]">
+          <div class="font-medium text-[22.4px]">Categories</div>
+          <div class="text-[19.2px] hover:bg-[#15803D] hover:text-white w-full pl-[10px] rounded-[5px]">
+            <div>All Tree</div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-x-[30px]
+        gap-y-[12px]">
+          <div class="flex flex-col bg-white p-[16px] gap-y-[12px] w-85 rounded-2xl">
+            <img src="assets/hero-leaf1.png" alt="" />
+            <div class="flex flex-col gap-[8px]">
+            <div class="text-[14px] font-semibold ">Mango Tree</div>
+            <div class="text-[12px]">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</div>
+            <div class="flex justify-between items-center">
+              <div class="text-[#15803D] bg-[#DCFCE7] px-[12px] py-[4px] rounded-3xl w-fit">Fruit Tree</div>
+              <div>৳500</div>
+            </div>
+            </div>
+            <div>
+                <button class="w-full py-[12px] bg-[#15803D] rounded-3xl text-[15.2px] text-white hover:bg-[#1db154]">Add to Cart</button>
+            </div>
+          </div>
+          <div class="flex flex-col bg-white p-[16px] gap-y-[12px] w-85 rounded-2xl">
+            <img src="assets/hero-leaf1.png" alt="" />
+            <div class="flex flex-col gap-[8px]">
+            <div class="text-[14px] font-semibold ">Mango Tree</div>
+            <div class="text-[12px]">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</div>
+            <div class="flex justify-between items-center">
+              <div class="text-[#15803D] bg-[#DCFCE7] px-[12px] py-[4px] rounded-3xl w-fit">Fruit Tree</div>
+              <div>৳500</div>
+            </div>
+            </div>
+            <div>
+                <button class="w-full py-[12px] bg-[#15803D] rounded-3xl text-[15.2px] text-white hover:bg-[#1db154]">Add to Cart</button>
+            </div>
+          </div>
+          <div class="flex flex-col bg-white p-[16px] gap-y-[12px] w-85 rounded-2xl">
+            <img src="assets/hero-leaf1.png" alt="" />
+            <div class="flex flex-col gap-[8px]">
+            <div class="text-[14px] font-semibold ">Mango Tree</div>
+            <div class="text-[12px]">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green</div>
+            <div class="flex justify-between items-center">
+              <div class="text-[#15803D] bg-[#DCFCE7] px-[12px] py-[4px] rounded-3xl w-fit">Fruit Tree</div>
+              <div>৳500</div>
+            </div>
+            </div>
+            <div>
+                <button class="w-full py-[12px] bg-[#15803D] rounded-3xl text-[15.2px] text-white hover:bg-[#1db154]">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class=" flex flex-col gap-y-[8px] p-[16px] bg-white rounded-2xl">
+          <div class="text-[22.4px] font-medium" >Your Cart</div>
+          <div  class="flex justify-between items-center w-[218px] bg-[#F0FDF4] px-[12px] py-[8px] rounded-2xl">
+            <div >
+              <div class="font-bold text-[14px]">Mango Tree</div>
+              <div class="text-[#1F293750]">500 <i class="fa-solid fa-xmark"></i> 1</div>
+            </div>
+            <div><i class="fa-solid fa-xmark text-[#1F293750]"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="text-[#1F2937]">
+        <div class="text-[32px] text-center mb-[40px] font-medium">
+          About the Campaign
+        </div>
+        <div class="flex text-[19.2px] justify-center items-center">
+          <div><img src="assets/about.png" alt="" /></div>
+          <div class="pl-[30px]">
+            <div>
+              Green Earth is a global tree plantation initiative dedicated to
+              fighting <br />climate change. Since our start, we’ve planted over
+              500,000 trees <br />worldwide. By joining our campaign, you help
+              restore forests, create <br />habitats for wildlife, and combat
+              global warming.
+            </div>
+            <div class="pt-[20px]">
+              <ul class="list-disc list-inside">
+                <li>Restoration of natural habitats</li>
+                <li>Improvement of air quality</li>
+                <li>Support for local communities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
   </body>
 </html>
