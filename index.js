@@ -77,6 +77,7 @@ const changeCard = (id) =>
                 span.textContent = cart[productName];
               }
             }
+            updateTotal()
           } else {
             cart[productName] = 1;
             const cardData = document.createElement("div");
@@ -85,13 +86,20 @@ const changeCard = (id) =>
       <div class="flex justify-between items-center w-[218px] bg-[#F0FDF4] px-[12px] py-[8px] rounded-2xl">
         <div>
           <div class="font-bold text-[14px]">${productName}</div>
-          <div class="text-[#1F293750]">
+          <div class="text-[#1F293750] price">
             ${productPrice} <i class="fa-solid fa-xmark"></i> <span class="qty">1</span>
           </div>
         </div>
-        <div><i class="fa-solid fa-xmark text-[#1F293750]"></i></div>
+        <div><i class="remove-btn fa-solid fa-xmark text-[#1F293750]"></i></div>
       </div>`;
             cartContainer.appendChild(cardData);
+            const removeBtn = cardData.querySelector(".remove-btn");
+            removeBtn.addEventListener("click", function () {
+              delete cart[productName];
+              cardData.remove();
+              return updateTotal()
+            });
+            updateTotal();
           }
         });
       }
@@ -155,6 +163,7 @@ const allTree = () =>
                 span.textContent = cart[productName];
               }
             }
+            updateTotal()
           } else {
             cart[productName] = 1;
             const cardData = document.createElement("div");
@@ -163,15 +172,21 @@ const allTree = () =>
       <div class="flex justify-between items-center w-[218px] bg-[#F0FDF4] px-[12px] py-[8px] rounded-2xl">
         <div>
           <div class="font-bold text-[14px]">${productName}</div>
-          <div class="text-[#1F293750]">
+          <div class="text-[#1F293750] price">
             ${productPrice} <i class="fa-solid fa-xmark"></i> <span class="qty">1</span>
           </div>
         </div>
-        <div><i class="fa-solid fa-xmark text-[#1F293750]"></i></div>
+        <div><i class="remove-btn fa-solid fa-xmark text-[#1F293750]"></i></div>
       </div>`;
             cartContainer.appendChild(cardData);
+            const removeBtn = cardData.querySelector(".remove-btn");
+            removeBtn.addEventListener("click", function () {
+              delete cart[productName];
+              cardData.remove();
+              return updateTotal()
+            });
+            updateTotal();
           }
-          return;
         });
       }
     });
@@ -204,4 +219,23 @@ function openCardModal(name, description, image, category, price) {
   `;
 
   document.getElementById("card_modal").showModal();
+}
+function updateTotal() {
+  let total = 0;
+
+  const cartItems = document.querySelectorAll("[data-name]");
+
+  for (let i = 0; i < cartItems.length; i++) {
+    const item = cartItems[i];
+
+    const price = parseFloat(item.querySelector(".price").textContent);
+    const quantity = parseInt(item.querySelector(".qty").textContent);
+
+    if (!isNaN(price) && !isNaN(quantity)) {
+      total += price * quantity;
+    }
+  }
+
+  document.getElementById("total-money").textContent = total;
+  return total;
 }

@@ -76,6 +76,8 @@
       class="py-[100px] flex flex-col justify-center items-center gap-y-[40px]"
     >
       <div class="text-[32px] text-center font-semibold">Choose Your Trees</div>
+      <div id="spinner" class="loading loading-spinner loading-xl text-green-700 mx-auto my-10 hidden"></div>
+
       <div class="flex-col lg:flex-row flex gap-x-[30px] lg:px-[135px] gap-y-6">
         <div class="min-w-[250px]">
           <div class="font-medium text-[22.4px] mb-[16px]">Categories</div>
@@ -94,13 +96,13 @@
           id="card-container"
           class="grid lg:grid-cols-3 gap-x-[30px] gap-y-[20px]"
         ></div>
-        <div class="flex flex-col gap-y-[8px] p-[16px] bg-white rounded-2xl">
+        <div class="flex flex-col gap-y-[8px] p-[16px] bg-white rounded-2xl h-fit">
           <div class="text-[22.4px] font-medium w-[218px]">Your Cart</div>
           <div id="cart-data" class="flex flex-col gap-y-3"></div>
           <hr class="border-[#1F293750]" />
           <div class="text-[17.2px] flex justify-between">
             <div><span class="text-[#15803D]">Total</span>:</div>
-            <div class="font-medium">৳1000</div>
+            <div class="font-medium">৳<span id="total-money">0</span></div>
           </div>
         </div>
       </div>
@@ -113,11 +115,11 @@
         <div class="flex flex-col lg:flex-row text-[19.2px] justify-center items-center">
           <div class="max-sm:mb-4 rounded-2xl"><img src="assets/about.png" alt="" /></div>
           <div class="pl-[30px]">
-            <div>
+            <div class="max-sm:pr-[30px]">
               Green Earth is a global tree plantation initiative dedicated to
-              fighting <br />climate change. Since our start, we’ve planted over
-              500,000 trees <br />worldwide. By joining our campaign, you help
-              restore forests, create <br />habitats for wildlife, and combat
+              fighting <br class="hidden lg:block" />climate change. Since our start, we’ve planted over
+              500,000 trees <br class="hidden lg:block" />worldwide. By joining our campaign, you help
+              restore forests, create <br class="hidden lg:block" />habitats for wildlife, and combat
               global warming.
             </div>
             <div class="pt-[20px]">
